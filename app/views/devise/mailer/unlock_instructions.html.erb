@@ -1,0 +1,7 @@
+<p>Witaj <%= @resource.email %>!</p>
+
+<p>Twoje konto zostało zablokowane.</p>
+
+<p>Kliknij tutaj by odblokować:</p>
+
+<p><%= link_to 'Odblokuj Moje konto', unlock_url(@resource, unlock_token: @token) %></p>
