@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <title>Książka kucharska</title>
+=======
+  <title>BookReview</title>
+>>>>>>> refs/remotes/origin/master
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,6 +17,7 @@
 		<div class="container">
 
 			<div class="navbar-header">
+<<<<<<< HEAD
 				<%= link_to "KSIĄŻKA KUCHARSKA", root_path, class: "navbar-brand" %>
 			</div>
 
@@ -22,11 +27,23 @@
 					<li><%= link_to "Wyloguj", destroy_user_session_path, method: :delete %></li>
 				<% else %>	
 					<li><%= link_to "Zaloguj", new_user_session_path %></li>
+=======
+				<%= link_to "Book Review", root_path, class: "navbar-brand" %>
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li><%= link_to "Sign Up", new_user_registration_path %></li>
+				<% if user_signed_in? %>
+					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+				<% else %>	
+					<li><%= link_to "Log In", new_user_session_path %></li>
+>>>>>>> refs/remotes/origin/master
 				<% end %>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
 
+<<<<<<< HEAD
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kategorie <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -41,6 +58,13 @@
 
 				<% if user_signed_in? %>
 					<li><%= link_to "Dodaj przepis", new_book_path %></li>
+=======
+
+
+
+				<% if user_signed_in? %>
+					<li><%= link_to "Add Book", new_book_path %></li>
+>>>>>>> refs/remotes/origin/master
 				<% end %>
 				
 			</ul>
@@ -49,12 +73,15 @@
 
 	</nav>
 
+<<<<<<< HEAD
 	<p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
   <div class="container">
 		<%= yield %>
 	</div>	
+=======
+>>>>>>> refs/remotes/origin/master
 
 </body>
 </html>
