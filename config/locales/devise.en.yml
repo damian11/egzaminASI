@@ -1,0 +1,59 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+en:
+  devise:
+    confirmations:
+      confirmed: "Twój email został pomyślnie potwierdzony."
+      send_instructions: "Otrzymasz instrukcję dotyczące kontynuowania na email"
+      send_paranoid_instructions: "Jeśli twój adres istnieje w bazie danych, otrzymasz instrukcję dotyczące kontynuowania na email."
+    failure:
+      already_authenticated: "Jesteś już zalogowany."
+      inactive: "Nie aktywowałeś konta."
+      invalid: "Złe %{authentication_keys} lub hasło."
+      locked: "Twoje konto jest zablokowane."
+      last_attempt: "Masz jeszcze tylko jedną próbę zanim konto zostanie zablokowane."
+      not_found_in_database: "Złe %{authentication_keys} lub hasło."
+      timeout: "Sesja wygasła. Zaloguj się ponownie."
+      unauthenticated: "Musisz się zarejestrować lub zalogować."
+      unconfirmed: "Musisz potwierdzić adres email."
+    mailer:
+      confirmation_instructions:
+        subject: "Instrukcje potwierdzenia"
+      reset_password_instructions:
+        subject: "Instrukcje resetowania hasła"
+      unlock_instructions:
+        subject: "Instrukcje odblokowania"
+    omniauth_callbacks:
+      failure: "Nie można zautentykować %{kind} bo \"%{reason}\"."
+      success: "Pomyślnie zautentykowano z tego %{kind} konta."
+    passwords:
+      no_token: "Musisz potwierdzić hasło."
+      send_instructions: "Otrzymasz informację na email."
+      send_paranoid_instructions: "Jeśli twój adres email istnieje w bazie danych, otrzymasz informację na email."
+      updated: "Pomyślnie zmieniono hasło. Zostałeś zalogowany."
+      updated_not_active: "Pomyślnie zmieniono hasło."
+    registrations:
+      destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
+      signed_up: "Pomyślnie zarejestrowano."
+      signed_up_but_inactive: "Pomyślnie zarejestrowano. Nie można zalogować, bo nie potwierdzono konta."
+      signed_up_but_locked: "Pomyślnie zarejestrowano. Nie można zalogować, bo konto jest zablokowane."
+      signed_up_but_unconfirmed: "Wiadomość została wysłana na podany adres email"
+      update_needs_confirmation: "Pomyślnie zakutalizowano konto, ale musisz potwierdzić swój adres email. Otrzymasz wiadomośc email."
+      updated: "Pomyślnie zakutalizowano konto."
+    sessions:
+      signed_in: "Zalogowano pomyślnie."
+      signed_out: "Wylogowano pomyślnie."
+    unlocks:
+      send_instructions: "Otrzymasz instrukcję dotyczące odblokowania na email."
+      send_paranoid_instructions: "Jeśli twój adres email istnieje w bazie danych, otrzymasz instrukcję dotyczące odblokowania na email."
+      unlocked: "Odblokowano konto. Zaloguj się."
+  errors:
+    messages:
+      already_confirmed: "Spróbuj się zalogować"
+      confirmation_period_expired: "musi być potwierdzone w czasie %{period}, poproś o nowe"
+      expired: "wygasło"
+      not_found: "nie znaleziono"
+      not_locked: "nie było zamknięte"
+      not_saved:
+        one: "1 błąd %{resource} przed zapisaniem:"
+        other: "%{count} błędów  %{resource} przed zapisaniem:"

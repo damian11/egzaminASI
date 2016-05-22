@@ -1,0 +1,28 @@
+<h1 class="current-category"><center><%= params[:category] %></center></h1>
+
+<% if @books.count == 0 %>
+<center>
+		<h1>Póki co nie ma przepisów w tej kategori.</h1>
+</center>
+
+
+<% else %>	
+
+	<div class="row">
+
+		<% @books.each do |book| %>
+
+			<div class="col-md-3">
+				<a href="/books/<%= book.id %>">
+					<%= image_tag book.book_img.url(:book_index), class: "book" %>
+				</a>
+			</div>	
+
+		<% end %>
+
+	</div>
+	
+<% end %>	
+<center><h2>
+<%= link_to "Dodaj przepis", new_book_path %>
+</h2></center>
